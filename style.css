@@ -1,0 +1,529 @@
+*{
+    padding: 0; 
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-image: url(images/body-background.jpg);
+    background-attachment: scroll;
+}
+a:link{ 
+    text-decoration: none; 
+}
+a:visited{ 
+    color: white;
+}
+button, li{
+    cursor:pointer;
+}
+/* go top button */
+#go-top {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    font-size: 50px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 5px 10px 50px #00000077;
+}
+  
+#go-top:hover {
+    background-color: rgb(219, 0, 0);
+    box-shadow: 5px 10px 50px #000000;
+}
+/* header */
+#header-logo{
+    width: 200px;
+    margin-bottom: 5px;
+    margin-right: 350px;
+    margin-left: 50px;
+}
+.header-list{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    height: 80px;
+    box-shadow: 5px 10px 50px #000000;
+    background-color: rgb(22, 22, 22);
+    line-height: 80px;
+    width: 1910px;
+}
+.header-list li{
+    color: rgb(202, 202, 202);
+    width: 150px;
+    text-align: center;
+}
+.header-list li:hover{
+    transition: 0.2s;
+    color: white;
+    background-color: rgb(255, 0, 43);
+    box-shadow: 5px 10px 50px #000000;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+.header-list button{
+    color: rgb(202, 202, 202);
+    background-color: #00000000;
+    width: 50px;
+    margin-left: 500px;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+}
+.header-list button:hover{
+    transition: 0.2s;
+    color: white;
+}
+.header-list #music-off{
+    display: none;
+}
+/* header content */
+.header-content{
+    height: 800px;
+    background-image: url(images/main-page/introduction-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 5px 10px 50px #000000; 
+    width: 1910px;
+    margin-top: 50px;
+    display: flex;
+}
+.begin-button-background{
+    background-color: #000000d2;
+    width: 380px;
+    height: 150px;
+    margin-top: 330px;
+    margin-left: 100px;
+    border-radius: 5px;
+}
+.begin-button-background p{
+    color: white;
+    font-size: 20px;
+    width: 330px;
+    margin-top: 20px;
+    margin-left: 28px;
+}
+.begin-button-background button{
+    background-color: rgb(0, 119, 255);
+    color: white;
+    font-size: 20px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-left: 37%;
+}
+.begin-button-background button:hover{
+    transition: 0.2s;
+    background-color: rgb(255, 0, 43);
+    box-shadow: 5px 10px 50px #000000;
+}
+.introduction-background{
+    display: flex; 
+    background-color: #000000d2;
+    width: 1200px;
+    height: 490px;
+    margin-left: 150px;
+    margin-top: 150px;
+    border-radius: 5px;
+}
+.introduction-text{
+    display: block;
+}
+.introduction-background p{
+    color: white;
+}
+.introduction-background #p-one{
+    color: white;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-left: 330px;
+}
+.introduction-background #p-two{
+    color: white;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+.introduction-background #yu-gi-oh-intro-image{
+    width: 350px;
+    height: 450px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+/* informations */
+.informations-background{
+    background-image: url(images/main-page/blue-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 5px 10px 50px #000000;
+    margin-top: 50px;
+    width: 1910px;
+    height: 850px;
+    display: flex;
+    justify-content: center;
+}
+.info-header{
+    display: block;
+}
+.info-header #main-characters-text{
+    color: white;
+    font-size: 30px;
+    margin-left: 42%;
+    margin-top: 20px;
+    border: 0px solid black;
+    border-radius: 5px;
+    background-color: rgb(255, 0, 43);
+    width: 260px;
+    text-align: center;
+}
+.characters{
+    display: flex;
+}
+/* Yugi Mutou Info */
+.yugi-mutou-info{
+    background-color: #000000d2;
+    box-shadow: 5px 10px 50px #000000;
+    width: 490px;
+    display: block;
+    height: 720px;
+    margin-top: 50px;
+    margin-right: 50px;
+    border-radius: 5px;
+}
+#ione-p-one{
+    background-color: rgb(255, 0, 0);
+    border: none;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    width: 250px;
+    margin-left: 125px;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+.yugi-mutou-info img{
+    width: 350px;
+    margin-left: 70px;
+    margin-bottom: 27px;
+}
+.yugi-mutou-info img:hover{
+    width: 370px;
+    margin-right: 35px;
+    margin-bottom: 1px;
+}
+#ione-p-two{
+    color: white;
+    font-size: 20px;
+    width: 450px;
+    margin-left: 25px;
+}
+/* Seto Kaiba Info */
+.kaiba-info{
+    background-color: #000000d2;
+    box-shadow: 5px 10px 50px #000000;
+    width: 490px;
+    display: block;
+    height: 720px;
+    margin-top: 50px;
+    margin-right: 50px;
+    border-radius: 5px;
+}
+#itwo-p-one{
+    background-color: rgb(0, 119, 255);
+    border: none;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    width: 250px;
+    margin-left: 125px;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+.kaiba-info img{
+    width: 430px;
+    margin-left: 35px;
+    margin-bottom: 25px;
+}
+.kaiba-info img:hover{
+    width: 450px;
+    margin-left: 35px;
+    margin-bottom: 4px;
+}
+#itwo-p-two{
+    color: white;
+    font-size: 20px;
+    width: 450px;
+    margin-left: 25px;
+}
+/* Joey Info */
+.joey-info{
+    background-color: #000000d2;
+    box-shadow: 5px 10px 50px #000000;
+    width: 490px;
+    display: block;
+    height: 720px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+#ithree-p-one{
+    background-color: rgb(255, 196, 0);
+    border: none;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    width: 320px;
+    margin-left: 90px;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+.joey-info img{
+    width: 430px;
+    margin-left: 35px;
+    margin-bottom: 25px;
+}
+.joey-info img:hover{
+    width: 450px;
+    margin-left: 35px;
+    margin-bottom: 4px;
+}
+#ithree-p-two{
+    color: white;
+    font-size: 20px;
+    width: 450px;
+    margin-left: 25px;
+}
+/* Gods Cards */
+.gods-cards-background{
+    background-image: url(images/main-page/gray-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 5px 10px 50px #000000;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 850px;
+    width: 1910px;
+    display: block;
+    justify-content: center;
+}
+#main-cards-text{
+    color: white;
+    font-size: 30px;
+    margin-left: 43.5%;
+    margin-top: 20px;
+    border: 0px solid black;
+    border-radius: 5px;
+    background-color: rgb(255, 0, 43);
+    width: 260px;
+    height: 50px;
+    text-align: center;
+}
+.gods-cards{
+    display: flex;
+    justify-content: center;
+}
+/* effect of card */
+/* slifer effect card */
+#slifer-card-effect-text{
+    background-color: #000000d2;
+    width: 450px;
+    height: 480px;
+    margin-top: 200px;
+    margin-right: 200px;
+    display: none;
+}
+#slifer-card-effect-text #s-e-p-one{
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
+    margin-top: 20px;
+    font-size: 30px;
+    width: 380px;
+    font-style: oblique;
+    border: 2px solid rgb(133, 0, 0);
+    border-bottom-right-radius: 30px;
+}
+#slifer-card-effect-text #s-e-p-two{
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+    margin-left: 25px;
+    width: 400px;
+}
+/* obelisk effect card */
+#obelisk-card-effect-text{
+    background-color: #000000d2;
+    width: 450px;
+    height: 480px;
+    margin-top: 200px;
+    margin-right: 200px;
+    display: none;
+}
+#obelisk-card-effect-text #o-e-p-one{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 119, 255);
+    margin-top: 20px;
+    font-size: 30px;
+    width: 340px;
+    font-style: oblique;
+    border: 2px solid rgb(0, 86, 199);
+    border-bottom-right-radius: 30px;
+}
+#obelisk-card-effect-text #o-e-p-two{
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+    margin-left: 25px;
+    width: 400px;
+}
+/* ra effect card */
+#ra-card-effect-text{
+    background-color: #000000d2;
+    width: 450px;
+    height: 480px;
+    margin-top: 200px;
+    margin-right: 200px;
+    display: none;
+}
+#ra-card-effect-text #r-e-p-one{
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 196, 0);
+    width: 380px;
+    margin-top: 20px;
+    font-size: 30px;
+    font-style: oblique;
+    border: 2px solid rgb(255, 123, 0);
+    border-bottom-right-radius: 30px;
+}
+#ra-card-effect-text #r-e-p-two{
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+    margin-left: 25px;
+    width: 400px;
+}
+/* slifer card */
+.slifer-card img{
+    height: 480px;
+    margin-top: 200px;
+    margin-right: 50px;
+    margin-left: 50px;
+    cursor:pointer;
+    box-shadow: 2px 5px 25px #000000;
+}
+.slifer-card img:hover{
+    transition: 0.3s;
+    margin-top: 130px;
+    box-shadow: 5px 10px 50px #ff0000;
+}
+.slifer-card img::after{
+    margin-top: 130px;
+    box-shadow: 5px 10px 50px #ff0000;
+}
+/* obelisk card */
+.obelisk-card img{
+    width: 330px;
+    margin-top: 200px;
+    margin-right: 50px;
+    cursor:pointer;
+    box-shadow: 2px 5px 25px #000000;
+}
+.obelisk-card img:hover{
+    transition: 0.3s;
+    margin-top: 130px;
+    box-shadow: 5px 10px 50px #0077ff;
+}
+/* ra card */
+.ra-card img{
+    width: 330px;
+    margin-top: 200px;
+    margin-right: 50px;
+    cursor:pointer;
+    box-shadow: 2px 5px 25px #000000;
+}
+.ra-card img:hover{
+    transition: 0.3s;
+    margin-top: 130px;
+    box-shadow: 5px 10px 50px #ffc400;
+}
+/* About Page */
+.about-page-background{
+    background-image: url(images/main-page/informations-background-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 5px 10px 50px #000000;
+    margin-bottom: 50px;
+    width: 1910px;
+    max-height: 850px;
+    min-height: 650px;
+    display: inline-block;
+}
+.about-text{
+    background-color: #000000d2;
+    box-shadow: 5px 10px 50px #000000;
+    width: 1600px;
+    height: 160px;
+    border-radius: 5px;
+    margin-top: 250px;
+    margin-left: 155px;
+}
+.about-text p{
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
+#about-p-one{
+    padding-top: 10px;
+}
+#about-p-two{
+    margin-top: 20px;
+}
+/* Social Media */
+.social-media-background{    
+    background-color: rgb(22, 22, 22);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 5px 10px 50px #000000;
+    width: 1910px;
+    max-height: 550px;
+    min-height: 330px;  
+    display: inline-block;
+}
+.sm-text{
+    background-color: #0099ffbd;
+    box-shadow: 5px 10px 50px #000000;
+    width: 700px;
+    height: 150px;
+    border-radius: 5px;
+    margin-top: 58px;
+    margin-left: 33%;
+}
+.sm-text p{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+#sm-p-one{
+    padding-top: 20px;
+}
+#sm-p-two{
+    margin-top: 20px;
+}
+#sm-p-two:hover{
+    transition: 0.2s;
+    color: #00ff73;
+}
+/* CopyRight Text */
+hr{
+    margin-top: 50px;
+    border: 1px solid #ffffff;
+}
+#copyright-text{
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 45%;
+}

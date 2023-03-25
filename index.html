@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yu-Gi-Oh</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<audio id="background-music" autoplay umuted src="music/yu-gi-oh-background-music.mp3"></audio>
+<body>
+  
+    <!-- Top Button -->
+    <a id="go-top" title="Go to top" href="#">
+        <span>&#8593;</span>
+    </a>
+
+    <!-- Header -->
+    <header id="header">
+        <ul class="header-list">
+            <img id="header-logo" src="images/main-page/main-logo.png" alt="Yu-Gi-Oh Logo">
+            <a href="/index.html">
+             <li>HOME</li>
+                </a>
+                <a href="https://www.konami.com/yugioh/masterduel/us/en/">
+             <li>DOWNLOAD</li>
+                </a>
+                <a href="https://www.youtube.com/watch?v=s1QsMX9MwHA" target="_blank">
+             <li>HOW TO PLAY</li>
+                </a>
+             <a href="#social-media">   
+             <li>CONTACT US</li>
+             </a>
+             <a href="#about-page">   
+                <li>ABOUT</li>
+             </a>
+            <button id="music-on" onclick="MusicOn()">
+                <i class="fa-sharp fa-solid fa-volume-high"></i>
+            </button>
+                <button id="music-off" onclick="MusicOff()">
+                <i class="fa-sharp fa-solid fa-volume-xmark"></i>
+            </button>
+        </ul>
+        <div class="header-content">
+            <div class="begin-button-background">
+            <p>This Website explaining for you <strong>Yu-Gi-Oh</strong> Game and how to play it.</p>
+            <a href="#informations">
+            <button>Begin ❯</button>
+            </a>
+            </div>
+            <div class="introduction-background">
+            <img id="yu-gi-oh-intro-image" src="images/main-page/introduction-text-image.jpg" alt="yu-gi-oh text image" >
+            <div class="introduction-text">
+            <p id="p-one"><strong>Introduction:</strong></p>
+            <p id="p-two">
+                <strong>Yu-Gi-Oh!</strong> tells the tale of Yugi Mutou, a timid young boy who loves all sorts of games, 
+                but is often bullied around. One day, he solves an ancient puzzle known as the Millennium Puzzle, 
+                causing his body to play host to a mysterious spirit with the personality of a gambler.</p>
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <!-- informations about characters -->
+    <div id="informations">
+        <div class="informations-background">
+            <div class="info-header">
+            <p id="main-characters-text">Main Characters</p>
+            <div class="characters">
+                <div class="yugi-mutou-info">
+                 <p id="ione-p-one">Yami Yugi</p>
+                 <img src="images/main-page/yu-gi-oh-character.png" alt="Yugi Mutou Character">
+                 <p id="ione-p-two">Yami Yugi is an extraordinary and 
+                    confident duelist who fights the ultimate battle at the Shadow Games. But who 
+                    is Yami Yugi? The spirit confined within the Millennium Puzzle is the spirit of 
+                    the ancient Egyptian Pharaoh that locked away the Shadow Games millennia ago.</p>
+                </div>
+
+                <div class="kaiba-info">
+                 <p id="itwo-p-one">Seto Kaiba</p>
+                 <img src="images/main-page/kaiba-character.png" alt="Kaiba Character">
+                 <p id="itwo-p-two">He is the CEO of Kaibacorp, and aims to become the world's 
+                    greatest player of Duel Monsters. To accomplish this goal, he must defeat 
+                    his arch-rival, Yugi Muto.</p>
+                </div>
+
+                <div class="joey-info">
+                 <p id="ithree-p-one">Joey Wheeler</p>
+                 <img src="images/main-page/joey-character.png" alt="Joey Character">
+                 <p id="ithree-p-two">Katsuya Jonouchi or Joseph "Joey" Wheeler is one 
+                    of the two deuteragonists (alongside Seto Kaiba) of the original Yu-Gi-Oh! 
+                    series and both of its adaptations, acting as the deuteragonist in every arc 
+                    up until Battle City.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Gods Cards Effect Info -->
+<div class="gods-cards-background">
+    <br>
+    <p id="main-cards-text">Gods Cards</p>
+    <div class="gods-cards">
+    <div id="slifer-card-effect-text">
+        <p id="s-e-p-one"><strong>Slifer The Sky Dragon</strong></p>
+        <p id="s-e-p-two">Attack Points: X000 (1000)
+            <br>
+            <br>
+            Defense Points: X000 (1000)
+            <br>
+            <br>
+            Special Abilities: Can destroy 3 monsters with 1 blast. 
+            It gains 1000 Attack and Defense points for the amount of cards 
+            in your hand.
+            <br>
+            <br>
+            Every new monster your opponent summons automatically 
+            loses 2000 Attack or Defense Points depending on the mode 
+            they're played in. If the monster's Attack or Defense Points are 
+            reduced to zero because of this, destroy the monster.</p>
+    </div>
+    <div id="obelisk-card-effect-text">
+        <p id="o-e-p-one"><strong>Obelisk the Tormentor</strong></p>
+        <p id="o-e-p-two">Attack Points: 4000
+            <br>
+            <br>
+            Defense Points: 4000
+            <br>
+            <br>
+            Special Abilities: Three monsters must be tributed to summon Obelisk.
+            <br>
+            <br>
+            You can sacrifice two monsters on your side of the field to allow 
+            Obelisk to destroy all monsters on the field and inflict 6000 points 
+            worth of damage to your opponent.</p>
+    </div>
+    <div id="ra-card-effect-text" style.display = "none">
+        <p id="r-e-p-one"><strong>The Winged Dragon of Ra</strong></p>
+        <p id="r-e-p-two">Attack Points: ?
+            <br>
+            <br>
+            Defense Points: ?
+            <br>
+            <br>
+            Special Abilities: Three monsters must be tributed to summon Ra.
+            <br>
+            <br>
+            His attack and defense points are determined by the collective attack 
+            and defense points of the monsters used to summon Ra.
+            <br>
+            <br>
+            You can sacrifice all but one of your Life Points and give them to Ra. 
+            <br>
+            <br>
+            You can sacrifice monsters to Ra to increase his Attack and Defense 
+            Points by the Attack and Defense of the sacrificed monster.</p>
+    </div>
+    <div class="slifer-card" onclick="FunctionSlifer()">
+        <img src="images/main-page/slifer-dragon.png" alt="Slifer Dragon">
+    </div>
+    
+    <div class="obelisk-card" onclick="FunctionObelisk()">
+        <img src="images/main-page/obelisk-the-tormentor.png" alt="Obelisk The Tormentor">
+    </div>
+    
+    <div class="ra-card" onclick="FunctionRa()" click="FunctionEffect()">
+        <img src="images/main-page/the-winged-dragon-of-ra.png" alt="The Winged Dragon Of Ra">
+    </div>
+  </div>
+</div> 
+
+<!-- About Page -->  
+<div id="about-page">
+    <div class="about-page-background">
+        <div class="about-text">
+            <p id="about-p-one">This is a landing page <strong>Yu-Gi-Oh Game</strong>, 
+               Created for a tutorial on 
+               <a href="https://www.theodinproject.com/" target="_blank"><strong>
+                <u>The Odin Project!</u></strong></a></p>
+            <p id="about-p-two">Thanks <strong>Odin!</strong></p>
+        </div>
+    </div>
+</div> 
+
+<!-- Social Media -->
+<div id="social-media">
+    <div class="social-media-background">
+        <div class="sm-text">
+            <p id="sm-p-one">Have a question? Feel free to contact us:</p>
+            <a href="https://github.com/bardach01?tab=repositories" target="blank">
+              <p id="sm-p-two"><i class="fa-brands fa-github"></i> bardach01</p>
+            </a>
+        </div>
+        <hr>
+        <p id="copyright-text">Copyright © <u>bardach01.</u></p>
+    </div>
+</div>
+</body>
+</html>

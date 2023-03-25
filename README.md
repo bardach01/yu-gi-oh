@@ -1,0 +1,1 @@
+This is a landing page Yu-Gi-Oh Game, Created for a tutorial on The Odin Project!
